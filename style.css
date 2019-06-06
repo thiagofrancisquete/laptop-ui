@@ -1,3 +1,4 @@
+/* estilos gerais  */
 * {
   margin: 0px;
   padding: 0px;
@@ -12,10 +13,12 @@ a:link {
   text-decoration: none;
 }
 
-body {
+body, button {
   font-family: 'Poppins', sans-serif;
+  background-color: #000;
 }
 
+/* header  */
 header {
   display: flex;
   width: 90%;
@@ -26,6 +29,10 @@ header {
 
 .logo-container, .nav-links, .cart {
   display: flex;
+}
+
+.logo {
+  color: #808083;
 }
 
 .logo-container {
@@ -41,7 +48,7 @@ nav {
 }
 
 .nav-link {
-  color: #5f5f79;
+  color: #808083;
   font-size: 18px;
 }
 
@@ -50,9 +57,80 @@ nav {
   justify-content: flex-end;
 }
 
-main {
-  background-color: aquamarine;
+/* banner central  */
+
+.presentation {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  min-height: 80vh; 
+  align-items: center;
+}
+
+.introduction {
+  flex: 1;
+}
+
+.intro-text {
+  color: #808083;
+  font-weight: 300;
+}
+
+.intro-text h1 {
+  font-size: 44px;
+  background: linear-gradient(to right, #c5c7a3d5, #ddd9d9b6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.intro-text p {
+  font-size: 22px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.cta {
+  padding: 50px 0px 0px 0px;
+}
+
+.cta-select, .cta-add {
+  color: #808083;
+  width: 150px;
+  height: 50px;
+  cursor: pointer;
+  font-size: 16px;
+  margin: 5px;
+  border-radius: 50px;
+  font-weight: 500;
+}
+
+.cta-select {
+  background-color: transparent;
+  border: 1px solid #ccc;
+  opacity: .8;
+}
+
+.cta-select:hover {
+  opacity: 1;
+}
+
+.cta-add {
+  background-color: #c36cbb;
+  border: 1px solid #c36cbb;
+  color: #000;
+  opacity: .8;
+}
+
+.cta-add:hover {
+  opacity: 1;
 }
 
 
+.cover {
+  flex: 1;
+}
+
+.cover img {
+  height: 60vh;
+}
 
