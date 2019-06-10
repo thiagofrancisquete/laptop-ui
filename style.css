@@ -166,6 +166,10 @@ nav {
     margin-top: 20px;
     text-align: center;
   }
+
+  .logo-container, .cart {
+    display: none;
+  }
   
   .nav-links {
     text-align: center;
