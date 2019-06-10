@@ -13,9 +13,10 @@ a:link {
   text-decoration: none;
 }
 
-body, button {
+body,
+button {
   font-family: 'Poppins', sans-serif;
-  background-color: #000;
+  background-color: #f6f1f1;
 }
 
 /* header  */
@@ -27,7 +28,9 @@ header {
   height: 10vh;
 }
 
-.logo-container, .nav-links, .cart {
+.logo-container,
+.nav-links,
+.cart {
   display: flex;
 }
 
@@ -63,7 +66,7 @@ nav {
   display: flex;
   width: 90%;
   margin: auto;
-  min-height: 80vh; 
+  min-height: 80vh;
   align-items: center;
 }
 
@@ -93,7 +96,8 @@ nav {
   padding: 50px 0px 0px 0px;
 }
 
-.cta-select, .cta-add {
+.cta-select,
+.cta-add {
   color: #808083;
   width: 150px;
   height: 50px;
@@ -106,8 +110,8 @@ nav {
 
 .cta-select {
   background-color: transparent;
-  border: 1px solid #ccc;
-  opacity: .8;
+  border: 1px solid #9c9999;
+  opacity: 0.8;
 }
 
 .cta-select:hover {
@@ -118,13 +122,12 @@ nav {
   background-color: #c36cbb;
   border: 1px solid #c36cbb;
   color: #000;
-  opacity: .8;
+  opacity: 0.8;
 }
 
 .cta-add:hover {
   opacity: 1;
 }
-
 
 .cover {
   flex: 1;
@@ -134,3 +137,22 @@ nav {
   height: 60vh;
 }
 
+
+@media screen and (max-width: 1024px) {
+  .presentation {
+    flex-direction: column;
+  }
+
+  .introduction {
+    margin-top: 5vh;
+    text-align: center;
+  }
+
+  .intro-text p {
+    font-size: 24px;
+  }
+  
+  .nav-link {
+    font-size: 22px;
+  }
+}
